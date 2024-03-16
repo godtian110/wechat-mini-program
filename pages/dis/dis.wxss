@@ -1,0 +1,14 @@
+/* pages/dis/dis.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.disinfo{
+  width: 85%;
+  height: 500rpx;
+  margin: 50rpx;
+  background: gainsboro;
+}
+button{
+  background: #92c47d;
+}

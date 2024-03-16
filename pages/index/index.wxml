@@ -1,0 +1,40 @@
+<lc-header></lc-header>
+<view class="container">
+  <view class="eat">
+    <swiper 	previous-margin="30rpx" 	autoplay circular 	interval="2000" 	indicator-dots 	indicator-active-color="#92c47d" 	indicator-color="rgb(255,255,255,0.3)"> 
+      <swiper-item>
+        <image src="/static/eat/1.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="/static/eat/2.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="/static/good.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="/static/eat/4.jpg" mode=""/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <vtabs vtabs="{{vtabs}}" >
+    <vtabs-content tabIndex="{{index}}" wx:for="{{vtabsContent}}" wx:for-item="item" wx:for-index="index" wx:key="index"> 
+      <view class="content">
+        <text>{{item.name}}</text>
+        <view class="list" wx:for="{{item.goodlist}}" wx:for-item="gooditem" wx:key="i"> 
+          <view class="goods-item">
+            <image src="{{gooditem.img}}" mode=""/>
+            <view class="info">
+              <text>{{gooditem.name}}</text>
+              <text>{{gooditem.num}}</text>
+              <text>{{gooditem.price}}</text>
+            </view>
+            <image  class="add" src="/static/plus-circle-fill.png" mode=""/>
+          </view>
+        </view>
+      </view>
+    </vtabs-content>
+  </vtabs>
+</view>
+
+
+

@@ -1,0 +1,60 @@
+page {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.container .eat {
+  padding-top: 30rpx;
+}
+
+.container .eat swiper {
+  height: 460rpx;
+}
+
+.container .eat swiper swiper-item image {
+  width: 690rpx;
+  height: 100%;
+  border-radius: 30rpx;
+}
+
+.container vtabs {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container vtabs .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container vtabs .content .list .goods-item {
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx 0 15rpx 0;
+}
+
+.container vtabs .content .list .goods-item image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.container vtabs .content .list .goods-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container vtabs .content .list .goods-item .add {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  left: 160rpx;
+  top: 70rpx;
+}

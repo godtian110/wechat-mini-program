@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/good/good",
+    "pages/cart/cart",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/info/info",
+    "pages/dis/dis",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#92c47d",
+    "navigationBarTitleText": "良辰餐厅",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+   "color": "#4c4d4e",
+    "selectedColor": "#92c47d",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/image/home.png",
+        "selectedIconPath": "/static/image/home-fill.png"
+      },
+      {
+        "text": "点餐",
+        "pagePath": "pages/good/good",
+        "iconPath": "/static/image/detail.png",
+        "selectedIconPath": "/static/image/detail-fill.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "/static/image/trophy.png",
+        "selectedIconPath": "/static/image/trophy-fill.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "/static/image/user.png",
+        "selectedIconPath": "/static/image/user2.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "lc-header":"/components/lc-header/lc-header"
+  }
+}

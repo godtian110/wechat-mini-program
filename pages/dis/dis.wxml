@@ -1,0 +1,5 @@
+<!--pages/dis/dis.wxml-->
+<lc-header></lc-header>
+
+<textarea class="disinfo" placeholder="请输入您的评价" bindinput="getinfo" ></textarea>
+<button bindtap="sub">评论</button>

@@ -1,0 +1,17 @@
+<!--pages/info/info.wxml-->
+<view class="container">
+  <view class="touxiang">
+    <button  open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image src="{{img}}" mode=""/>
+    </button> 
+  </view>
+  <view class="info">
+    <view class="user">姓名：</view>
+    <input class="userinfo" placeholder="{{name}}" type="text"/>
+  </view>
+  <view class="info">
+    <view class="user">密码：</view>
+    <input class="userinfo" placeholder="{{psw}}" type="text"/>
+  </view>
+  <button bindtap="resubmit" class="resubmit">重新上传</button>
+</view>

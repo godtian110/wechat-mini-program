@@ -1,0 +1,5 @@
+<view class="header">
+  <navigator url="/pages/index/index" class="logo">
+    <image src="/static/image/title.jpg" mode="heightFix" class="pic"/>
+  </navigator>
+</view>

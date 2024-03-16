@@ -1,0 +1,31 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .pic {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 50rpx;
+}
+
+.item {
+  display: flex;
+  background: gainsboro;
+  align-items: center;
+  padding: 25rpx 20rpx;
+  margin-top: 40rpx;
+}
+
+.btn {
+  background: var(--titlebackground);
+  color: white;
+  margin: 40rpx;
+}
+
+.zhuce {
+  color: red;
+  text-align: center;
+}

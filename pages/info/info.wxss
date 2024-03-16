@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .touxiang {
+  display: flex;
+  align-items: center;
+}
+
+.container .touxiang button image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.container .info {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+}
+
+.container .info .user {
+  width: 140rpx;
+  margin-left: 10rpx;
+  border-right: 1px solid black;
+}
+
+.container .info .userinfo {
+  width: 550rpx;
+  height: 80rpx;
+  background-color: gainsboro;
+}
+
+.container .resubmit {
+  background: var(--titlebackground);
+  color: white;
+  margin-top: 40rpx;
+  margin-left: auto;
+  margin-right: auto;
+}

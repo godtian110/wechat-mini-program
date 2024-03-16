@@ -1,0 +1,27 @@
+.root {
+  width: 100%;
+  margin-left: 80rpx;
+  margin-top: 70rpx;
+}
+
+.root .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.root .item input {
+  width: 425rpx;
+  border-bottom: 1px solid gray;
+  padding: 15rpx;
+}
+
+.root .btn {
+  position: relative;
+  left: 7%;
+  margin: 50rpx;
+  background: #92c47d;
+  color: white;
+  border-radius: 60rpx;
+}

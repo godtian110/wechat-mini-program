@@ -1,0 +1,8 @@
+view,text{
+  box-sizing: border-box;
+}
+page{
+  --themeColor:#BDA066;
+  --titlebackground:#92c47d;
+  --facusColor:#4c4d4e;
+}

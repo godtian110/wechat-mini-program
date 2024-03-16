@@ -1,0 +1,13 @@
+.header {
+  height: 120rpx;
+  border: 1px solid var(--titlebackground);
+}
+
+.header .logo {
+  height: 110rpx;
+  padding-left: 180rpx;
+}
+
+.header .logo .pic {
+  height: 100%;
+}

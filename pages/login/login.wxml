@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+<lc-header></lc-header>
+<view class="contianer">
+  <!-- 头像 -->
+  <view class="top">
+    <image class="pic" src="/static/good.jpg" mode=""/>
+    <view>良辰餐厅欢迎您</view>
+  </view>
+
+  <view>
+    <!-- 输入 -->
+    <view class="item"> 
+      <view>手机：
+      </view>
+      <input placeholder="请输入手机号" type="number" bindinput="getPhone"/>
+    </view>
+
+    <view class="item"> 
+      <view>密码：
+      </view>
+      <input placeholder="请输入密码" type="safe-password" bindinput="getPsw"/>
+    </view>
+
+    <button class="btn" bindtap="login">登录</button>
+    <view class="zhuce" bindtap="register">暂无账号？点击去注册</view>
+  </view>
+</view>
+
+

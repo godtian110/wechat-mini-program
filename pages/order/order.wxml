@@ -1,0 +1,54 @@
+<lc-header></lc-header>
+<!-- 未完成 -->
+<view>未完成订单：</view>
+<view wx:if="{{openid!=''&&rmb!=''}}" class="text_main1" wx:for="{{rmb}}" wx:for-item="item" wx:key="_id" bindtap='showbs' id="{{item._id}}" wx:if="{{openid==item.userid&&item.xd==1&&!item.qccg}}">
+    <view class="main_gwc">
+        <view class="title">
+            <view class="sjmc_1">  
+                {{item.bookList[0].name}}
+            </view>
+            <button size="mini" type="warn" class="sp_btn" id="{{item._id}}" bindtap="binqc">取消商品</button>
+            <button size="mini" type="primary" class="sp_btn" id="{{item._id}}"  bindtap="binxd">取餐</button>
+        </view>
+        <view class="zp_sp">
+            <image src='{{item.bookList[0].img}}'></image>
+        </view>
+        <view class="zp_nrl">
+            
+            <view class="title_zpnrl1">
+                价格：{{item.bookList[0].price}}
+            </view>
+            <view class="title_zpnrl">
+                加入时间：{{item.time}}
+            </view>
+        </view>
+    </view>
+</view>  
+<!-- 已完成 -->
+<view>已完成订单：</view>
+<view wx:if="{{openid!=''&&rmb!=''}}" class="text_main1" wx:for="{{rmb}}" wx:for-item="item" wx:key="_id" bindtap='showbs' id="{{item._id}}" wx:if="{{openid==item.userid&&item.xd==1&&item.qccg}}">
+    
+    <view class="main_gwc">
+        <view class="title">
+            <view class="sjmc_1">  
+                {{item.bookList[0].name}}
+            </view>
+            <button size="mini" type="primary" class="sp_btn" id="{{item._id}}"  bindtap="dis">去评价</button>
+        </view>
+        <view class="zp_sp">
+            <image src='{{item.bookList[0].img}}'></image>
+        </view>
+        <view class="zp_nrl">
+            
+            <view class="title_zpnrl1">
+                价格：{{item.bookList[0].price}}
+            </view>
+            <view class="title_zpnrl">
+                加入时间：{{item.time}}
+            </view>
+            <view class="title_zpnrl">
+                评论：{{item.dis}}
+            </view>
+        </view>
+    </view>
+</view> 

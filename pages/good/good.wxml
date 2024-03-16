@@ -1,0 +1,14 @@
+<!--pages/good/good.wxml-->
+<view class="contmian" >
+    <view class="mian_box" wx:for="{{good}}" wx:for-item="item" wx:key="_id">
+        <view class="main_box_left">
+            <image src="{{item.img}}" class="zszp"></image>
+        </view>
+        <view class="main_box_right">
+            <view class="tit_zs">{{item.name}}</view>
+            <view class="pl">库存:{{item.num}}</view>
+            <view class="jg">￥ {{item.price}}</view>
+            <button size="mini" type="primary" bindtap="addCart" id="{{item._id}}"  class="btn_9">购买</button>
+        </view>  
+    </view> 
+</view> 
